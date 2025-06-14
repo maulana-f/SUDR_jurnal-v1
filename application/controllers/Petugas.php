@@ -40,8 +40,8 @@ class Petugas extends CI_Controller {
 	{
 		$data = array(
 			'login_nama' => $this->input->post('login_nama', TRUE),
-			'login_username' => $this->input->post('login_username', TRUE),
-			'login_password' => $this->input->post('login_password', TRUE),
+			'username' => $this->input->post('username', TRUE),
+			'password' => $this->input->post('password', TRUE),
 		);
 		
 		if ($this->M_Petugas->insert($data)) {
@@ -55,19 +55,19 @@ class Petugas extends CI_Controller {
 
 	public function submitedit()
 	{
-		$login_id = $this->input->post('login_id', TRUE);
-		$login_password = $this->input->post('login_password', TRUE);
+		$id_login = $this->input->post('id_login', TRUE);
+		$password = $this->input->post('password', TRUE);
 
 		$data = array(
 			'login_nama' => $this->input->post('login_nama', TRUE),
-			'login_username' => $this->input->post('login_username', TRUE),
+			'username' => $this->input->post('username', TRUE),
 		);
 
 		if (!empty($login_password)) {
-			$data['login_password'] = $login_password; 
+			$data['password'] = $password; 
 		}
 		
-		if ($this->M_Petugas->update($login_id, $data)) {
+		if ($this->M_Petugas->update($id_login, $data)) {
 			$this->session->set_flashdata("msg", "<div class='alert alert-success'>Data petugas Berhasil Diupdate</div>");
 		} else {
 			$this->session->set_flashdata("msg", "<div class='alert alert-danger'>Data petugas Gagal Diupdate</div>");

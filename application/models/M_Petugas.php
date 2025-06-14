@@ -16,18 +16,18 @@
 
         // Ambil satu data login berdasarkan ID
         public function get_by_id($id) {
-            return $this->db->get_where('login', ['login_id' => $id])->row();
+            return $this->db->get_where('login', ['id_login' => $id])->row();
         }
 
         // Update data login berdasarkan ID
         public function update($id, $data) {
-            $this->db->where('login_id', $id);
+            $this->db->where('id_login', $id);
             return $this->db->update('login', $data);
         }
 
         // Hapus data login berdasarkan ID
         public function delete($id) {
-            $this->db->where('login_id', $id);
+            $this->db->where('id_login', $id);
             return $this->db->delete('login');
         }
     }

@@ -41,10 +41,10 @@
                                     <tr>
                                         <td><?php echo $no++; ?></td>
                                         <td><?php echo $a->login_nama; ?></td>
-                                        <td><?php echo $a->login_username; ?></td>
+                                        <td><?php echo $a->username; ?></td>
                                         <td>
-                                            <a href="<?php echo base_url('petugas/edit/'.$a->login_id); ?>" class="btn btn-sm btn-primary">Edit</a>
-                                            <a href="<?php echo base_url('petugas/delete/'.$a->login_id); ?>" class="btn btn-sm btn-danger" onclick="return confirm('Yakin ingin menghapus data ini?')">Hapus</a>
+                                            <a href="<?php echo base_url('petugas/edit/'.$a->id_login); ?>" class="btn btn-sm btn-primary">Edit</a>
+                                            <a href="<?php echo base_url('petugas/delete/'.$a->id_login); ?>" class="btn btn-sm btn-danger" onclick="return confirm('Yakin ingin menghapus data ini?')">Hapus</a>
                                         </td>
                                     </tr>
                                     <?php endforeach; ?>
