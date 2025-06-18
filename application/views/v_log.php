@@ -14,9 +14,9 @@
             <div class="breadcrumbs-area clearfix" style="padding-top : 7px; padding-bottom : 7px">
                 <h4 class="page-title">Logs</h4>
                 <ul class="breadcrumbs pull-left">
-                    <li><a href="<?php echo base_url() ?>home">Admin</a></li>
-                    <li><a href="<?php echo base_url() ?>buku">log</a></li>
-                    <li><span>Data</span></li>
+                    <li><a href="<?php echo base_url() ?>home">Dashboard</a></li>
+                    <!-- <li><a href="<?php echo base_url() ?>log">log</a></li> -->
+                    <li><span>log</span></li>
                 </ul>
             </div>
         </div>
