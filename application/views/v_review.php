@@ -36,21 +36,48 @@
                 <th>Abstrak</th>
                 <th>Tanggal Upload</th>
                 <th>File path</th>
+                   <th>Status</th>
             </tr>
             <?php foreach ($journals as $j): ?>
             <tr>
                 <td><?= $j->Judul ?></td>
-                <td><?= $j->AbstrakJurnal ?></td>
-                <td><?= $j->review_date ?></td>
+                <td><?= $j->Abstrak ?></td>
+                <td><?= $j->tanggal_upload ?></td>
                 <td><?= $j->file_path ?></td>
-            </tr>
-            <?php endforeach; ?>
-        </table>
+                 <td><?= $j->status ?></td>
 
+                  <!-- <td>
+            <form action="<?= base_url('review/ubah_status') ?>" method="post" style="display:inline;">
+                <input type="hidden" name="id" value="<?= $j->id ?>">
+                <input type="hidden" name="status" value="Approved">
+                <button class="btn btn-approve" type="submit">Approve</button>
+            </form>
+            <form action="<?= base_url('review/ubah_status') ?>" method="post" style="display:inline;">
+                <input type="hidden" name="id" value="<?= $j->id ?>">
+                <input type="hidden" name="status" value="Rejected">
+                <button class="btn btn-reject" type="submit">Reject</button>
+            </form>
+            
+        </td> -->
+
+            </tr>
+            <!-- <?php endforeach; ?> -->
+        </table>
+ <!-- <?php foreach ($journals as $j): ?> -->
         <label for="comment"><strong>Comment</strong></label>
         <textarea name="comment" placeholder="Tulis komentar..."></textarea><br>
-        <button class="btn btn-reject">Reject</button>
-        <button class="btn btn-approve">Approve</button>
+        <form action="<?= base_url('review/ubah_status') ?>" method="post" style="display:inline;">
+                <input type="hidden" name="id" value="<?= $j->id ?>">
+                <input type="hidden" name="status" value="Approved">
+                <button class="btn btn-approve" type="submit">Approve</button>
+            </form>
+
+         <form action="<?= base_url('review/ubah_status') ?>" method="post" style="display:inline;">
+                <input type="hidden" name="id" value="<?= $j->id ?>">
+                <input type="hidden" name="status" value="Rejected">
+                <button class="btn btn-reject" type="submit">Reject</button>
+            </form>
+            <?php endforeach; ?>
     </div>
 </div>
 <title><?= $judul ?></title>
