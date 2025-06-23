@@ -13,12 +13,21 @@ class Review extends CI_Controller
     public function index()
     {
         $data['Judul'] = "Review Jurnal";
-        $data['journals'] = $this->M_review->get_all();
+        $data['journals'] = $this->M_review->get_pending();
          $this->load->view('layout/headers');
         $this->load->view('layout/navigation');
         $this->load->view('v_review', $data); 
          $this->load->view('layout/footers');
     }
+
+   public function ubah_status()
+{
+    $id = $this->input->post('id');
+    $status = $this->input->post('status');
+
+    $this->M_review->ubah_status($id, $status);
+    redirect('review'); // reload halaman
+}
 
     
     

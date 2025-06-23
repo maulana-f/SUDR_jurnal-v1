@@ -75,6 +75,7 @@
     transition: all 0.3s ease 0s;
 }
 
+
 .card:hover {
     box-shadow: 0 5px 30px rgba(81, 4, 4, 0.548);
 }
@@ -1189,7 +1190,7 @@ table.dbkit-table tr td {
 .footer-area {
     text-align: center;
     padding: 23px 0 19px;
-    background: #fff;
+    background: #940b0b;
 }
 
 .footer-area p {
