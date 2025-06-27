@@ -33,17 +33,17 @@
         <table class="table-log">
             <tr>
                 <th>Judul</th>
-                <th>Abstrak</th>
+                <!-- <th>Abstrak</th> -->
                 <th>Tanggal Upload</th>
-                <th>File path</th>
+                <!-- <th>File path</th> -->
                    <th>Status</th>
             </tr>
             <?php foreach ($journals as $j): ?>
             <tr>
                 <td><?= $j->Judul ?></td>
-                <td><?= $j->Abstrak ?></td>
+                <!-- <td><?= $j->Abstrak ?></td> -->
                 <td><?= $j->tanggal_upload ?></td>
-                <td><?= $j->file_path ?></td>
+                <!-- <td><?= $j->file_path ?></td> -->
                  <td><?= $j->status ?></td>
 
                   <!-- <td>

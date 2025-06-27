@@ -29,7 +29,7 @@
                         <div class="s-sale-inner pt--10 mb-2">
                             <div class="s-report-title d-flex justify-content-between">
                                 <h4 class="header-title mb-0">Aproved</h4>
-                                  <button class="btn">tombol</button>
+                                  <!-- <button class="btn">tombol</button> -->
                             </div>
                         </div>
                         <canvas id="coin_sales5" height="100"></canvas>
@@ -40,7 +40,7 @@
                         <div class="s-sale-inner pt--10 mb-2">
                             <div class="s-report-title d-flex justify-content-between">
                                 <h4 class="header-title mb-0">Rejected</h4>
-                                 <button class="btn">tombol</button>
+                                 <!-- <button class="btn">tombol</button> -->
                             </div>
                         </div>
                         <canvas id="coin_sales5" height="100"></canvas>
@@ -51,7 +51,7 @@
                         <div class="s-sale-inner pt--10 mb-2">
                             <div class="s-report-title d-flex justify-content-between">
                                 <h4 class="header-title mb-0">Pending</h4>
-                                 <button class="btn">tombol</button>
+                                 <!-- <button class="btn">tombol</button> -->
 
                             </div>
                         </div>
@@ -64,7 +64,7 @@
                         <div class="s-sale-inner pt--10 mb-2">
                             <div class="s-report-title d-flex justify-content-between">
                                 <h4 class="header-title mb-0">Jurnal</h4>
-                                <button class="btn">tombol</button>
+                                <!-- <button class="btn">tombol</button> -->
                             </div>
                         </div>
                         <canvas id="coin_sales5" height="100"></canvas>

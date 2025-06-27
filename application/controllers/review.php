@@ -26,6 +26,14 @@ class Review extends CI_Controller
     $status = $this->input->post('status');
 
     $this->M_review->ubah_status($id, $status);
+
+// log aktivitas
+$log = [
+  'user_id' => $this->session->userdata('user_id'),
+  'action' => 'review',
+  'log_date' => date('Y-m-d H:i:s')
+];
+$this->db->insert('logs', $log);
     redirect('review'); // reload halaman
 }
 
