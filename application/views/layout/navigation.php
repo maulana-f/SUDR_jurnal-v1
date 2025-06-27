@@ -14,9 +14,11 @@
                     <nav>
                         <ul class="metismenu" id="menu">
                             <li><a href="<?php echo base_url() ?>home"><i class="ti-dashboard"></i> <span style="color: black">Dashboard</span></a></li>
-                            <li><a href="<?php echo base_url() ?>peminjaman"><i class="ti-slice"></i> <span style="color: black">Upload</span></a></li>
+                            <li><a href="<?php echo base_url() ?>upload"><i class="ti-slice"></i> <span style="color: black">Upload</span></a></li>
                             <li><a href="<?php echo base_url() ?>review"><i class="ti-slice"></i> <span style="color: black">Review</span></a></li>
                             <li><a href="<?php echo base_url() ?>log"><i class="ti-slice"></i> <span style="color: black">Log</span></a></li>
+                             <li><a href="<?php echo base_url() ?>Jurnal"><i class="ti-slice"></i> <span style="color: black">Jurnal</span></a></li>
+                            
                             <li>
                                 <a href="javascript:void(0)" aria-expanded="true"><i class="ti-slice"></i> <span style="color: black">Data Penting</span></a>
                                 <ul class="collapse">

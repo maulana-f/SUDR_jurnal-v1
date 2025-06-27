@@ -32,26 +32,25 @@
     <h2>Riwayat Aktivitas</h2>
      <div class="single-table">
         <div class="table-responsive">
-    <table class="table table-hover progress-table text-center">
-        <thead class="bg-primary">
+   <table>
+    <thead>
+        <tr>
+            <th>Username</th>
+             <th>Waktu</th>
+            <th>Aktivitas</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php foreach ($logs as $l): ?>
             <tr>
-                <th style="color: black">Log ID</th>
-                <th style="color: black">User ID</th>
-                <th style="color: black">Action</th>
-                <th style="color: black">Log Date</th>
+                <td><?= $l->username ?? 'Tidak diketahui' ?></td>
+                 <td><?= $l->log_date ?></td>
+                <td><?= $l->action ?></td>
             </tr>
-        </thead>
-        <tbody>
-            <?php foreach ($logs as $log): ?>
-                <tr>
-                    <td><?= $log->log_id ?></td>
-                    <td><?= $log->user_id ?></td>
-                    <td><?= $log->action ?></td>
-                    <td><?= $log->log_date ?></td>
-                </tr>
-            <?php endforeach; ?>
-        </tbody>
-          </table>
+        <?php endforeach ?>
+    </tbody>
+</table>
+
            </div>
             </div>
             </div>

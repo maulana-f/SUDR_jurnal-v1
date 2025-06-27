@@ -25,7 +25,7 @@
                         <form action="<?php echo base_url() ?>petugas/submitedit" method="post">
                             <div class="card-body">
                                 <h4 class="header-title">Entri Petugas</h4>
-                                <input type="hidden" class="form-control" name="login_id" value="<?= $petugas->login_id ?>" readonly>
+                                <input type="hidden" class="form-control" name="id_login" value="<?= $petugas->id_login?>" readonly>
                                 <div class="form-group">
                                     <label class="col-form-label">Nama Petugas</label>
                                     <input type="text" class="form-control" name="login_nama" maxlength="100" value="<?php echo isset($petugas->login_nama) ? $petugas->login_nama : ''; ?>" required>
